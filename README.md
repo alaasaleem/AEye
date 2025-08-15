@@ -1,6 +1,9 @@
 # AEye - AI Vision System for Low Vision Individuals
 
-![AEye Logo](https://github.com/alaasaleem/AEye/blob/main/app/static/images/logo.png?raw=true)
+<p align="center">
+  <img src="https://github.com/alaasaleem/AEye/blob/main/app/static/images/logo.png?raw=true" alt="AEye Logo" width="200"/>
+</p>
+
 
 ## 🎯 Project Overview
 
@@ -144,7 +147,9 @@ Our solution addresses these challenges by providing an intelligent, voice-contr
 ## 🏗 Architecture
 
 ### System Architecture
-![System Architecture](static/images/Architecture.png)
+<p align="center">
+![System Architecture](https://github.com/alaasaleem/AEye/blob/main/app/static/images/Architecture.png?raw=true)
+</p>
 
 ### Protocols
 - **HTTP/HTTPS**: Web communication
