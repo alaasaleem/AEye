@@ -1,6 +1,6 @@
 # AEye - AI Vision System for Low Vision Individuals
 
-![AEye Logo](https://github.com/alaasaleem/AEye/blob/main/static/images/logo.png?raw=true)
+![AEye Logo](https://github.com/alaasaleem/AEye/blob/main/app/static/images/logo.png?raw=true)
 
 ## 🎯 Project Overview
 
