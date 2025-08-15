@@ -1,7 +1,7 @@
 # AEye - AI Vision System for Low Vision Individuals
 
 <p align="center">
-  <img src="https://github.com/alaasaleem/AEye/blob/main/app/static/images/logo.png?raw=true" alt="AEye Logo" width="200"/>
+  <img src="https://github.com/alaasaleem/AEye/blob/main/app/static/images/logo.png?raw=true" alt="AEye Logo" width="600"/>
 </p>
 
 
@@ -148,7 +148,7 @@ Our solution addresses these challenges by providing an intelligent, voice-contr
 
 ### System Architecture
 <p align="center">
-![System Architecture](https://github.com/alaasaleem/AEye/blob/main/app/static/images/Architecture.png?raw=true)
+<img src=https://github.com/alaasaleem/AEye/blob/main/app/static/images/Architecture.png?raw=true" alt="AEye Logo" width="800"/>
 </p>
 
 ### Protocols
