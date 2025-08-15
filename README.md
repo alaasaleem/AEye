@@ -11,7 +11,7 @@ AEye is an innovative AI-powered vision assistance system designed to enhance in
 
 ## 👥 Team
 
-- [Ahmad Ghazawneh]()
+- [Ahmad Ghazawneh](https://github.com/ahmadghz17)
 - [Alaa Saleem](https://github.com/alaasaleem)
 - [Baraa Khanfar](https://github.com/baraakh30)
 - [Hala Gholeh](https://github.com/HalaGholeh)
