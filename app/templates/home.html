@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEye</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/buttonContainer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/processingMessage.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recordButton.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/faceButton.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/siriWave.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/logo.css') }}">
+
+</head>
+<body>
+
+    <div class="loader" id="loader" style="display: none;"></div>
+
+    <div class="logo-container" id="logoContainer">
+        <img src="{{url_for('static', filename='images/logo.png')}}" alt="AEYE logo" class="center-logo">
+    </div>
+
+    <div class="button-container">
+        <div class="button-border">
+            <button id="recordButton"><i id="buttonIcon" class="fas fa-microphone"></i></button>
+            <button id="faceButton" onclick="window.location.href='/faceRecognition'"><i class="fas fa-users-viewfinder"></i></button>
+            <div class="processing-message" id="processingMessage">
+                    <div class="loader"></div>
+                    <span>Processing...</span>
+             </div>
+        </div>
+        <div id="siri-container"></div>
+    </div>
+
+    <script  src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.14.0/dist/ort.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/constants.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.18/dist/bundle.min.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/alert.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/buttonRecord.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/uuidGenerator.js') }}"></script>
+</body>
+</html>

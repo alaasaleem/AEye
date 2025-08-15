@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEye - Add a face</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/siriWave.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/video.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/captureTimer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/buttonContainer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/captureImageButton.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/processingMessage.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/recordButton.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/exitButton.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/doneButton.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader" id="loader" style="display: none;"></div>
+
+    <div class="video-wrapper" id="videoWrapper">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+        <button id="flipButton" class="flip-button"><i id="buttonIcon3" class="fas fa-repeat"></i></button>
+    </div>
+
+    <div class="button-container">
+        <div class="button-border">
+            
+            <div class="processing-message" id="processingMessage">
+                    <div class="loader"></div>
+                    <span>Processing...</span>
+             </div>
+             <div id="captureTimer" class="capture-timer"><span id="captureTimerValue">3</span></div>
+             <button id="exitButton" onclick="window.location.href='/'"><i class="fa fa-home"></i></button>
+             <button id="recordButton" disabled><i id="buttonIcon" class="fas fa-microphone"></i></button>
+             <button id="doneButton" style="display:none;" onclick="disableButton(this); window.location.href='/'" disabled>
+                <i class="fa-solid fa-circle-check"></i>
+                <span id="timer">10</span>
+            </button>
+            
+            <script>
+            function disableButton(button) {
+                button.disabled = true;
+            }
+            </script>
+           <button id="captureImageButton" class="captureImageButton" ><i  class="buttonIcon"></i></button>
+        </div>
+        <div id="siri-container"></div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.14.0/dist/ort.js"></script>
+    <script  src="https://unpkg.com/siriwave/dist/siriwave.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.18/dist/bundle.min.js"></script>
+    <script type="module" src="{{ url_for('static', filename='js/openCamera.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/buttonRecord.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/addFace.js') }}"></script>
+</body>
+</html>

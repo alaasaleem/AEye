@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEye - Face Recognition</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/video.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/buttonContainer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/processingMessage.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/exitButton.css') }}">
+    <script defer src="{{ url_for('static', filename='js/face-api.min.js') }}"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="loader" id="loader" style="display: none;"></div>
+
+    <div class="video-wrapper" id="videoWrapper">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+        <button id="flipButton" class="flip-button"><i id="buttonIcon3" class="fas fa-repeat"></i></button>
+    </div>
+
+
+    <div class="button-container">
+        <div class="button-border">
+            
+            <div class="processing-message" id="processingMessage">
+                    <div class="loader"></div>
+                    <span id="statusMessage">loading...</span>
+             </div>
+           
+             <button id="exitButton" onclick="window.location.href='/'"><i class="fa fa-home"></i></button>
+              
+        </div>
+    </div>
+    <script type="module" src="{{ url_for('static', filename='js/utils.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/openCamera.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='js/faceRecognition.js') }}"></script>
+
+</body>
+</html>

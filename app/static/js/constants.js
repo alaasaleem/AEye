@@ -1,0 +1,18 @@
+export const recordButton = document.getElementById('recordButton');
+export const buttonContainer = document.querySelector('.button-border');
+export const waveform = document.getElementById('siri-container');
+export const  webCamElement = document.getElementById("webcam");
+export const canvasElement = document.getElementById("canvas");
+export const exitButton = document.getElementById("exitButton");
+export const processingMessage = document.getElementById("processingMessage");
+export const doneButton = document.getElementById("doneButton");
+export const startButton = document.getElementById("startButton");
+export const timer = document.getElementById("timer");
+export const captureTimer = document.getElementById('captureTimer');
+export const borderBox = document.querySelector('.border-box');
+export const captureTextButton = document.getElementById('captureButton');
+export const ocrTextBox = document.getElementById('ocrTextBox');
+export const ocrTextElement = document.getElementById('ocrText');
+export const statusMessageElement = document.getElementById('statusMessage');
+export const delay = ms => new Promise(res => setTimeout(res, ms));
+export const cacheName = 'blob-cache'; 

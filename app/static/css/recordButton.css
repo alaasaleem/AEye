@@ -1,0 +1,58 @@
+#recordButton {
+    background: linear-gradient(45deg, #fc0505, #ff2d3f); 
+    color: white;
+    border: none;
+    padding: 1em; /* Responsive padding */
+    font-size: 1.5rem; /* Responsive font size */
+    width: 25%; /* Relative width to the container */
+    border-radius: 12px; 
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(255, 107, 107, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+    position: relative; /* Changed to relative to work within the container */
+}
+
+#recordButton:hover {
+    box-shadow: 0px 6px 16px rgba(255, 107, 107, 0.8);
+    background: linear-gradient(45deg, #ff4757, #ff6b6b); 
+}
+
+#recordButton:disabled {
+    background: linear-gradient(45deg, #c0c0c0, #b0b0b0);
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+#recordButton i {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        width: 100%; 
+        height: 100px;
+    }
+
+    .button-border {
+        width: 90%; 
+        height: 100px; 
+        margin-top: 100px;
+    }
+
+    #recordButton {
+        width: 80px;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .processing-message {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .capture-timer {
+        font-size: 24px;
+        width: 100px;
+        height: 50px; 
+    }
+}

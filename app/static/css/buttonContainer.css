@@ -1,0 +1,37 @@
+.button-container {
+    width: 40%;  
+    height: 30%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    min-width: 300px;
+    max-height: 220px;
+}
+
+.button-border {
+    background-color: #7AA3E8;
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    min-width: 300px;
+    max-height: 220px;
+    height: 50%;
+}
+
+.button-border > button {
+    flex: 1 1 15%; 
+    min-width: 50px; 
+    margin: 5px;
+    max-width: 100px; 
+    min-height: 50px;
+    max-height: 100px;
+}
